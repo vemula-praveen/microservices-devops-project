@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Service</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body data-endpoint="/api/products" data-title="Products">
+    <nav>
+      <div class="brand">Product Service</div>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/users">Users</a>
+        <a href="/products">Products</a>
+        <a href="/orders">Orders</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="table-panel">
+        <h2>Products</h2>
+        <span id="status" class="status">Loading products...</span>
+        <table id="items-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

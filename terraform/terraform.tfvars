@@ -1,0 +1,7 @@
+aws_region        = "ap-south-1"
+availability_zone = "ap-south-1a"
+project_name      = "microservices-devops"
+instance_type     = "t3.micro"
+ami_id            = ""
+key_name          = ""
+ssh_allowed_cidr  = "32.200.99.252/32"

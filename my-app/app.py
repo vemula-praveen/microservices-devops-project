@@ -1,0 +1,1 @@
+print("Hello! Welcome to Docker and AWS ECR")

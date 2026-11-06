@@ -11,7 +11,7 @@ A small Node.js project with three independent services for the AWS/Jenkins assi
 
 ## Architecture
 
-Browser/client -> Nginx (port 8080 on your computer) -> one of:
+Browser/client -> Nginx (port 3000 on your computer) -> one of:
 - `/api/users` -> User Service
 - `/api/products` -> Product Service
 - `/api/orders` -> Order Service
@@ -30,16 +30,16 @@ docker compose ps
 Test endpoints:
 
 ```bash
-curl http://localhost:8080/
-curl http://localhost:8080/api/users
-curl http://localhost:8080/api/products
-curl http://localhost:8080/api/orders
-curl http://localhost:8080/api/users/health
-curl http://localhost:8080/api/products/health
-curl http://localhost:8080/api/orders/health
+curl http://localhost:3000/
+curl http://localhost:3000/api/users
+curl http://localhost:3000/api/products
+curl http://localhost:3000/api/orders
+curl http://localhost:3000/api/users/health
+curl http://localhost:3000/api/products/health
+curl http://localhost:3000/api/orders/health
 ```
 
-Open `http://localhost:8080` in your browser.
+Open `http://localhost:3000` in your browser to view the dashboard. You can also navigate to `/users`, `/products`, and `/orders` to see the app-like pages powered by each service.
 
 Stop:
 

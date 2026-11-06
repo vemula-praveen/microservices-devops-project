@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microservices Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="brand">Microservices App</div>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/users">Users</a>
+        <a href="/products">Products</a>
+        <a href="/orders">Orders</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Microservices Dashboard</h1>
+        <p>
+          Browse user, product and order records across the application services. Each section below loads data from its
+          dedicated backend service.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h3>User Service</h3>
+          <p>Manage customer identities and contact details.</p>
+          <a href="/users">Open users</a>
+        </article>
+
+        <article class="card">
+          <h3>Product Service</h3>
+          <p>Review inventory and pricing for all available products.</p>
+          <a href="/products">Open products</a>
+        </article>
+
+        <article class="card">
+          <h3>Order Service</h3>
+          <p>Track purchases and recent order activity.</p>
+          <a href="/orders">Open orders</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
